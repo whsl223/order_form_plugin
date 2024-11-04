@@ -5,14 +5,8 @@
     "version": "1.0",
     "action": {
       "default_popup": "index.html",
-      "default_icon": "logo128.png"
+      "default_icon": "logo.png"
     },
-    "permissions": ["activeTab", "scripting"],
-    "content_scripts": [
-      {
-        "matches": ["https://docs.google.com/forms/d/e/1FAIpQLSfW7Pq8MCxFMFrE9H_KksxcPBTpso7XNzz4I_FcDubuVBFS0Q/viewform"],
-        "js": ["popup.js"]
-      }
-    ]
+    "permissions": ["activeTab", "scripting"]
 
   }
