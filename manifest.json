@@ -7,6 +7,12 @@
       "default_popup": "index.html",
       "default_icon": "logo128.png"
     },
-    "permissions": ["activeTab", "scripting"]
- 
+    "permissions": ["activeTab", "scripting"],
+    "content_scripts": [
+      {
+        "matches": ["https://docs.google.com/forms/d/e/1FAIpQLSfW7Pq8MCxFMFrE9H_KksxcPBTpso7XNzz4I_FcDubuVBFS0Q/viewform"],
+        "js": ["popup.js"]
+      }
+    ]
+
   }
