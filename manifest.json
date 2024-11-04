@@ -1,0 +1,12 @@
+{
+    "manifest_version": 3,
+    "name": "Order Form Extensions",
+    "description": "Extra functionality for order form",
+    "version": "1.0",
+    "action": {
+      "default_popup": "index.html",
+      "default_icon": "logo128.png"
+    },
+    "permissions": ["activeTab", "scripting"]
+ 
+  }
