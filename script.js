@@ -47,11 +47,9 @@ function formatDate(dateString) {
           
         },
         args: [formObject.class, formObject.period, formatDate(formObject.date), formObject.venue]
-      }, (injectionResults) => {
+      }, () => {
         if (chrome.runtime.lastError) {
           console.error('Error injecting script:', chrome.runtime.lastError);
-        } else {
-          console.log('Script injected successfully.');
         }
       });
     });
